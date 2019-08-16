@@ -1,1 +1,26 @@
 // Mixins Here
+
+.flex-center(){
+    display: flex;
+    justify-content: center;
+}
+
+.nav-style(){
+    text-decoration: none;
+    color: black;
+}
+
+// parametric mixin 
+.btnStyle(@justifyContent,@borderRadius){
+    background-color:black;
+    color: white;
+    padding: 1.2rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: @justifyContent;
+    border-radius: @borderRadius;
+    
+}
+
+
